@@ -5,27 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="new.js">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Meriles</title>
 </head>
 <body>
    <div class="main">
        <div class="nav.bar">
            <div class="menu">
-               <ul>
-                   <div class="icon">
+               <input type="checkbox" id="check">
+               <!-- <label for="check">
+                   <i class="Fas fa-bars"></i>
+               </label> -->
+                   <div class="icon active" >
+                    <button id="hamburger-menu">
+                        <nav id="sidebar-menu">
+                          <h3>Menu</h3>
+                          <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Store</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                          </ul>
+                        </nav>
+                      </button>
                        <div class="logo">
                        Meriles
                     </div>
 
             </div>
-                   <li><a href="#">Home</a> </li>
+            <ul  id="myLinks"> 
+                   <li><a  href="#">Home</a> </li>
                    <li><a href="#">About</a></li>
                    <li><a href="#">Service</a></li>
                    <li><a href="#">Design</a></li>
                    <li><a href="#">Contact</a></li>
                </ul>
-               
+               <a href="javascript:void(0);" class="baricon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
             </div>
+            <div class="dropdown"></div>
             <div class="search">
                 <input class="srch" type="search" name="" placeholder="type to text">
                 <a href="#"> <button class="btn">search</button></a>
@@ -39,7 +61,7 @@
 
            <br>
            <h1>Nmeregini <br><span>Johnhenry</span> <br>Course</h1>
-           <p class="par">frontend developer and content creator<br>studied Estate management and valuation <br>The best feeling in life is to have something you're looking forward too.</p>
+           <p class="par">frontend developer and content creator<br>studied Estate management and valuation <br>The best feeling in life is to have something <br> you're looking forward too.</p>
            
            <button class="cn"><a href="#">Join</a></button>
 
